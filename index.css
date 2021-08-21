@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.window {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./bgimg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.gameArea {
+  width: 450px;
+  height: 100vh;
+  background-color: #333;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-left: 7px dashed #c8d6e5;
+  border-right: 7px dashed #c8d6e5;
+}
+
+.car {
+  width: 50px;
+  height: 80px;
+  background-color: aqua;
+  position: absolute;
+  bottom: 30px;
+}
+
+.line {
+  width: 10px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  margin-left: 220px;
+}
+
+.enemy {
+  width: 50px;
+  height: 80px;
+  /*background-color: red;*/
+  position: absolute;
+  bottom: 30px;
+}
+
+.score {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  background-color: orange;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px #777;
+  display: none;
+}
+
+.strtScreen {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: orange;
+  color: white;
+  border-radius: 7px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 50%;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 20px;
+  box-shadow: 0 5px 5px #777;
+}
+
+.strtScreen:hover {
+  background-color: white;
+  color: orange;
+  font-weight: bolder;
+  border: 2px solid orange;
+}
